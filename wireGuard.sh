@@ -7,7 +7,7 @@ wg_name="wg1"
 
 #----------------------------
 command='sudo wg show ${wg_name} 2>&1'
-
+#----------------------------
 res=$(eval $command)
 
 #colors 
@@ -16,7 +16,7 @@ GREEN='\033[1;32m'
 NC='\033[0m' # No Color
 BWhite='\033[1;37m'
 
-
+#----------------------------
 echo "echo res ${res}"
 
 if [[ $res == *$deactivate* ]]
